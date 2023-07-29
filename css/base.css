@@ -14,8 +14,8 @@ body {
     font-size: 18px;
     font-family: var(--font-1);
     color: white;
-    background: #080a0b;
-    /* padding-bottom: 500px; */
+    background: #fff;
+    padding-bottom: 500px;
 }
 
 img {
@@ -28,7 +28,7 @@ body::after {
     position: absolute;
     top: 0;
     left: 50%;
-    display: none;
+    /* display: none; */
     width: 1px;
     height: 100vh;
     background: green;
@@ -53,7 +53,7 @@ p {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1230px;
+    max-width: 1260px;
     width: 100%;
     /* outline: 1px solid red; */
 }
@@ -78,16 +78,21 @@ p {
 .btn {
     display: inline-flex;
     justify-content: center;
-    padding: 19px 31px;
+    padding: 16px 44px;
     font-family: var(--font-1);
     font-size: 16px;
     font-weight: 700;
-    color: var(--dark);
+    color: white;
     background: var(--accent);
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all .4s;
     cursor: pointer;
     border: none;
+}
+
+.btn--light {
+    background: transparent;
+    border: 1px solid white;
 }
 
 .btn:hover {
