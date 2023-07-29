@@ -210,4 +210,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 176px;
+}
+
+.createx {}
+
+.createx__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.createx__content {
+    padding-right: 135px;
+    padding-top: 83px;
+}
+
+.createx__title {
+    margin-bottom: 40px;
+}
+
+.createx__text {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 1.66;
+}
+
+.btn {}
+
+.createx__img {
+    position: relative;
+    flex: 0 0 705px;
 }
