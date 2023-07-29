@@ -118,6 +118,7 @@
 .home-intro__title strong {
     font-weight: 900;
     color: var(--accent);
+    letter-spacing: 0.6px;
 }
 
 .home-intro__actions {
