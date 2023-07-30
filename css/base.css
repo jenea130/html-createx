@@ -105,6 +105,17 @@ p {
     color: var(--text-dark);
 }
 
+.btn--border {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    background: transparent;
+}
+
+.btn--border:hover {
+    color: white;
+    background: var(--accent);
+}
+
 .btn--small {
     padding: 0 30px;
     height: 44px;
