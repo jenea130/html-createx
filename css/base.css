@@ -13,7 +13,7 @@ body {
     position: relative;
     font-size: 18px;
     font-family: var(--font-1);
-    color: #787A80;
+    color: var(--text-color);
     background: #fff;
     padding-bottom: 500px;
 }
