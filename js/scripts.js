@@ -50,5 +50,30 @@ $(document).ready(function () {
         $('.accordion__item').removeClass('active');
         $('.accordion__text').slideUp();
     }
+    const slider = $(".studies__wrap")
+
+    if (slider) {
+        studiesSlider()
+    }
+
+    function studiesSlider() {
+        slider.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 1000,
+            arrows: false,
+            dots: false,
+            variableWidth: true
+        })
+        const studies__arrow_prev = $('.studies__arrow--prev')
+        const studies__arrow_next = $('.studies__arrow--next')
+        studies__arrow_prev.on('click', function () {
+            slider.slick('slickPrev')
+        })
+        studies__arrow_next.on('click', function () {
+            slider.slick('slickNext')
+        })
+    }
+
 });
 
