@@ -497,7 +497,7 @@
 }
 
 .ask {
-    padding-bottom: 107px;
+    padding-bottom: 113px;
 }
 
 .ask__wrap {
@@ -556,6 +556,7 @@
     font-size: 20px;
     font-weight: 700;
     color: var(--text-dark);
+    cursor: pointer;
 }
 
 .accordion__text {
@@ -629,14 +630,18 @@
 }
 
 .studies__wrap {
-    margin-bottom: 60px;
+    margin-bottom: 14px;
     display: flex;
     gap: 30px;
 }
 
+.studies__wrap .slick-list {
+    padding: 0 0 50px !important;
+}
+
 .studies__item {
     position: relative;
-    padding: 24px 40px 40px;
+    padding: 43px 40px 40px;
     height: 390px;
     border-radius: 4px;
     border: 1px solid #E5E8ED;
@@ -646,24 +651,49 @@
 
 .studies__item:hover {
     color: white;
+    box-shadow: 0px 8px 30px -4px rgba(30, 33, 44, 0.5);
+}
+
+.studies__item:hover .item-study__number {
+    color: white;
+}
+
+.studies__item:hover .studies__label {
+    color: white;
+}
+
+.studies__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: url('../img/studies/background-hover.jpg') no-repeat center/cover;
-    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05),
-        0px 12px 10px -6px rgba(30, 33, 44, 0.08),
-        0px 26px 24px -10px rgba(30, 33, 44, 0.10),
-        0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.studies__item:hover::after {
+    opacity: 1;
+}
+
+.studies__content {
+    position: relative;
+    z-index: 3;
 }
 
 
 .studies__logo {
-    position: absolute;
-    top: 42px;
-    left: 40px;
+    margin-bottom: 10px;
 }
 
 .studies__label {
     position: relative;
-    margin-bottom: 40px;
-    padding-top: 71px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* padding-top: 71px; */
     font-size: 14px;
     font-weight: 400;
     color: var(--text-dark);
@@ -672,7 +702,7 @@
 .studies__label::after {
     position: absolute;
     content: '';
-    top: 108px;
+    bottom: 0;
     right: -40px;
     width: 390px;
     height: 1px;
