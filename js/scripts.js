@@ -3,8 +3,8 @@ $(document).ready(function () {
     if (tabs) {
         isTabs();
     }
-    function isTabs() {
 
+    function isTabs() {
         const tabs_items = document.querySelectorAll('.tabs__item');
         const tabs_wraps = document.querySelectorAll('.tabs__wrap');
         tabs_items.forEach((item, index) => {
@@ -75,5 +75,35 @@ $(document).ready(function () {
         })
     }
 
+    const plans = document.querySelector('.plans');
+    if (plans) {
+        isPlans();
+    }
+    function isPlans() {
+
+        const plans_btn = document.querySelectorAll('.plans__btn');
+        const plans_wraps = document.querySelectorAll('.plans__wrap');
+        plans_btn.forEach((item, index) => {
+            item.addEventListener('click', function () {
+                resetTabsItemsActive();
+                resetTabsContentActive();
+                item.classList.add('active');
+                setTabsWrapActive(index);
+            })
+        })
+        function resetTabsItemsActive() {
+            plans_btn.forEach((item, index) => {
+                item.classList.remove('active');
+            })
+        }
+        function resetTabsContentActive() {
+            plans_wraps.forEach((item, index) => {
+                item.classList.remove('active');
+            })
+        }
+        function setTabsWrapActive(index) {
+            plans_wraps[index].classList.add('active');
+        }
+    }
 });
 
