@@ -597,7 +597,7 @@
     /* margin: 0 -20px; */
 }
 
-.slick-slide {
+.studies .slick-slide {
     margin: 0 15px;
     width: 390px;
 }
@@ -860,6 +860,7 @@
 
 .plans__body {
     position: relative;
+    height: 540px;
 }
 
 .plans__wrap {
@@ -989,4 +990,117 @@
 
 .card__btn {
     margin-bottom: 40px;
+}
+
+.comment {
+    margin-bottom: 180px;
+}
+
+.comment__title {
+    margin-bottom: 60px;
+    font-size: 46px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.comment__wrap {
+    position: relative;
+    max-width: 1020px;
+    margin-left: 105px;
+}
+
+.comment__item {
+    padding-top: 70px;
+    padding-left: 164px;
+    padding-bottom: 60px;
+    padding-right: 97px;
+}
+
+.comment .slick-slide {
+    margin: 0 40px;
+    width: 1020px;
+
+}
+.comment__text {
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #424551;
+}
+
+.comment__text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -59px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/comment/brackets.svg') no-repeat;
+}
+
+.comment__profile {
+    display: flex;
+}
+
+.comment__avatar {
+    margin-right: 20px;
+}
+
+.comment__name {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.comment__status {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.comment__arrows {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment__arrow {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+}
+
+.comment__arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -9px;
+    fill: var(--accent);
+}
+.comment__arrow:hover {
+    background: var(--accent);
+}
+.comment__arrow:hover svg {
+    fill: white;
+}
+
+.comment__arrow--prev {
+    position: relative;
+    bottom: 190px;
+    left: -11px;
+}
+
+.comment__arrow--next {
+    position: relative;
+    bottom: 190px;
+    right: -11px;
 }

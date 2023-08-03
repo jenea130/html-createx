@@ -105,5 +105,30 @@ $(document).ready(function () {
             plans_wraps[index].classList.add('active');
         }
     }
+
+    const slider_single = $(".comment__wrap");
+
+    if (slider_single) {
+        commentSlider()
+    }
+
+    function commentSlider() {
+        slider_single.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1000,
+            arrows: false,
+            dots: false,
+            variableWidth: true
+        })
+        const comment_arrow_prev = $('.comment__arrow--prev')
+        const comment_arrow_next = $('.comment__arrow--next')
+        comment_arrow_prev.on('click', function () {
+            slider_single.slick('slickPrev')
+        })
+        comment_arrow_next.on('click', function () {
+            slider_single.slick('slickNext')
+        })
+   }
 });
 
