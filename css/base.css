@@ -15,7 +15,6 @@ body {
     font-family: var(--font-1);
     color: var(--text-color);
     background: #fff;
-    padding-bottom: 500px;
 }
 
 img {
