@@ -1321,9 +1321,9 @@
 }
 
 .footer-bottom__navigation {
-    padding-bottom: 3px;
     display: flex;
     align-items: flex-end;
+    padding-bottom: 3px;
 }
 
 .footer-bottom__navigation span {
@@ -1335,19 +1335,23 @@
 }
 
 .footer-bottom__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 16px;
-    position: relative;
     width: 40px;
     height: 40px;
     background: var(--accent);
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom__top:hover svg {
+    transform: translateY(-5px);
 }
 
 .footer-bottom__top svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transition: all .4s;
 }
 
 .footer-copyright {
