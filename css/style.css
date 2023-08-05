@@ -1279,6 +1279,13 @@
     margin-right: 6px;
     fill: white;
 }
+.footer-top__list a {
+    transition: all .4s;
+}
+.footer-top__list a:hover,
+.footer-top__list a.active {
+    color: white;
+}
 
 .footer-top__form {
     position: relative;
